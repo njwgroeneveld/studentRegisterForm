@@ -7,10 +7,9 @@ function registerStudent(){
         name: newNameInput,
         email: newEmailInput,
         dob: newDobInput
-
     }
 
-    fetch("http://localhost:8080/api/v1/student/", {
+    fetch("https://student-register-from.herokuapp.com/api/v1/student", {
         method: 'POST',
         headers: {
             'Content-Type' : `application/json`
