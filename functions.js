@@ -10,7 +10,7 @@ function registerStudent(){
 
     }
 
-    fetch("https://student-register-from.herokuapp.com/api/v1/student", {
+    fetch("http://localhost:8080/api/v1/student/", {
         method: 'POST',
         headers: {
             'Content-Type' : `application/json`
@@ -22,7 +22,7 @@ function registerStudent(){
         })
         .catch(error => { 
           alert(`Er is iets fout gegaan`);
-    //handle error --
+    //handle error 
         });
 
 
