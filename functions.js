@@ -9,7 +9,7 @@ function registerStudent(){
         dob: newDobInput
     }
 
-    fetch("https://student-register-from.herokuapp.com/api/v1/student", {
+    fetch("https://student-register-form.herokuapp.com/api/v1/student", {
         method: 'POST',
         headers: {
             'Content-Type' : `application/json`
